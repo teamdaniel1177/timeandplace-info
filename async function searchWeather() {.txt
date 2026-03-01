@@ -1,0 +1,11 @@
+async function searchWeather() {
+    const city = document.getElementById('city-input').value;
+    // 1. 여기서 OpenWeatherMap 등의 API로 도시 좌표를 가져옵니다.
+    // 2. 날씨 데이터를 가져와서 화면에 출력합니다.
+    
+    // 3. 수익화 링크 동적 생성 (예시)
+    const bookingLink = document.getElementById('booking-link');
+    bookingLink.href = `https://www.booking.com/searchresults.html?ss=${city}`;
+    
+    document.getElementById('result-card').style.display = 'block';
+}
