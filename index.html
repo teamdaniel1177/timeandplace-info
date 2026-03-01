@@ -1,1 +1,13 @@
-<h1>Hello World, Site is Working!</h1>
+<div class="search-box">
+    <input type="text" id="city-input" placeholder="도시 이름을 입력하세요 (예: Paris)">
+    <button onclick="searchWeather()">검색</button>
+</div>
+
+<div class="card" id="result-card" style="display: none;">
+    <h2 id="city-name"></h2>
+    <div class="time" id="clock"></div>
+    <div class="temp" id="weather"></div>
+    <div id="affiliate-links" style="margin-top: 15px;">
+        <a id="booking-link" href="#" target="_blank" style="color: blue; text-decoration: underline;">이 도시의 호텔 구경하기</a>
+    </div>
+</div>
